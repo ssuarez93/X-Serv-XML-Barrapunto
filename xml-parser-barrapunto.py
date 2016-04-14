@@ -45,7 +45,6 @@ class myContentHandler(ContentHandler):
                 self.theContent = ""
             elif name == 'link':
                 resp2 = " Link: " + "<a href='" + self.theContent + "'>" + self.theContent + "</a>" + "." + "</br>"
-                "<a href='/logout'>Logout</a></p>"
                 html_File.write(resp2)
                 self.inContent = False
                 self.theContent = ""
